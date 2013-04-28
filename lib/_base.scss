@@ -1,0 +1,19 @@
+@import "compass/utilities";
+@import "compass/typography";
+@import "compass/css3";
+
+/**
+ * Reset styles.
+ */
+@import "compass/reset";
+
+@import "media-queries";
+@import "mixins";
+
+/**
+ * Placeholders.
+ */
+@import "placeholders";
+
+// Global sprites with padding
+// $icons: sprite-map("icons/*.png", $spacing: 10px);
