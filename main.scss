@@ -1,7 +1,18 @@
 @charset 'UTF-8';
 
-@import "lib/base";
+// Compass
+@import "lib/compass/utilities";
+@import "lib/compass/typography";
+@import "lib/compass/css3";
+@import "lib/compass/reset";
+
+// Other third-party libs
+@import "lib/media-queries";
+
 @import "vars";
+@import "lib/mixins";
+@import "lib/placeholders";
+
 @import "common";
 @import "print";
 
