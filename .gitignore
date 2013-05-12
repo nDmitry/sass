@@ -1,4 +1,4 @@
 .DS_Store
 .idea/
-.sass_cache/
+.sass-cache/
 lib/compass
