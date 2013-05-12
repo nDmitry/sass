@@ -10,15 +10,20 @@
 @import "lib/media-queries";
 
 @import "vars";
+
+// Helpers
 @import "lib/mixins";
 @import "lib/placeholders";
 
-@import "common";
-@import "print";
+// Base layer
+@import "lib/base/common";
+@import "lib/base/print";
 
+// Objects layer
 @import "lib/objects/media";
 @import "lib/objects/flag";
 
+// User layer
 @import "layouts";
 @import "screen";
 @import "shame";
