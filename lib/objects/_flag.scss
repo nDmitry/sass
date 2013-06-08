@@ -3,7 +3,7 @@
  *
  * E.g.:
  *
- *    <div class="flag flag_bottom">
+ *    <div class="flag flag--bottom">
  *        <img src="" alt="" class="flag__img">
  *        <p class="flag__body">Lorem ipsum dolor sit amet</p>
  *    </div>
@@ -19,11 +19,11 @@
   display: table-cell;
   vertical-align: middle;
 
-  .flag_top & {
+  .flag--top & {
     vertical-align: top;
   }
 
-  .flag_bottom & {
+  .flag--bottom & {
     vertical-align: bottom;
   }
 }
