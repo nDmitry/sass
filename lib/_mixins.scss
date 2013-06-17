@@ -1,7 +1,7 @@
 // Background gradient fallback
 @mixin gradient-fallback($gradient, $fallback) {
-  background: $fallback;
-  background: $gradient;
+  background-color: $fallback;
+  background-image: $gradient;
 }
 
 // Arrow-box: a box with an arrow mixin (with optional borders)
