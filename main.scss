@@ -1,11 +1,5 @@
 @charset 'UTF-8';
 
-// Compass
-@import "lib/vendor/compass/utilities";
-@import "lib/vendor/compass/typography";
-@import "lib/vendor/compass/css3";
-@import "lib/vendor/compass/reset";
-
 @import "lib/vendor/media-queries";
 
 @import "vars";
@@ -13,20 +7,29 @@
 @import "lib/mixins";
 @import "lib/placeholders";
 
-// Base layer
-@import "partials/base";
 
-// Objects
-@import "lib/objects/media";
-@import "lib/objects/flag";
+// *** Layers *** //
+
+// Base layer
+@import "lib/base/reset";
+@import "lib/base/normalize";
+@import "partials/base";
+@import "partials/print";
 
 // Layout layer
 @import "partials/layout";
 
-// Module layer (BEM blocks as modules)
+// Abstractions
+@import "lib/objects/media";
+@import "lib/objects/flag";
+
+// Module (objects) layer (BEM blocks as modules)
 @import "partials/blocks";
 
 // State layer
 @import "partials/state";
+
+
+// *** Miscellaneous *** //
 
 @import "partials/shame";
