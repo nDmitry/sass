@@ -129,13 +129,3 @@
     color: $color;
   }
 }
-
-// Customize selection appearance
-@mixin selection {
-  &::-moz-selection {
-    @content;
-  }
-  &::selection {
-    @content;
-  }
-}
