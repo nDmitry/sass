@@ -129,3 +129,10 @@
     color: $color;
   }
 }
+
+// Image replacement
+@mixin hide-text {
+  color:            transparent;
+  font:             0/0 a;
+  text-shadow:      none;
+}
