@@ -1,10 +1,10 @@
-$base-font-size: 14px;
-$base-line-height: 18px;
-$base-font-family: Arial, sans-serif;
-$base-text-color: #222;
-
 $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
 $verdana: Verdana, Geneva, sans-serif;
+
+$base-font-size: 14px;
+$base-line-height: 18px;
+$base-font-family: $verdana;
+$base-text-color: #222;
