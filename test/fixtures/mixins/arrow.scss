@@ -1,0 +1,7 @@
+@import "vars";
+@import "lib/functions/opposite";
+@import "lib/mixins/arrow";
+
+.test {
+  @include arrow;
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Custom Font";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/path/to/font.eot");
+  src: local("Custom Font"), url("/path/to/font.eot?#iefix") format("embedded-opentype"), url("/path/to/font.woff") format("woff"), url("/path/to/font.ttf") format("truetype"), url("/path/to/font.svgCustom Font") format("svg");
+}

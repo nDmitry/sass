@@ -1,0 +1,7 @@
+@import "vars";
+@import "lib/functions/rem";
+
+.test {
+  font-size: rem(12px, 18px);
+  font-size: rem(12px);
+}

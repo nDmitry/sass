@@ -1,0 +1,7 @@
+.test {
+  text-decoration: none;
+  background: linear-gradient(to left, black, black) 0 100% / 1px 1px repeat-x;
+}
+.oldie .test, .is-ie9 .test {
+  text-decoration: underline;
+}

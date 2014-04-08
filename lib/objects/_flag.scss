@@ -12,26 +12,25 @@
 .flag {
   display: table;
   width: 100%;
-}
 
-.flag__image,
-.flag__body {
-  display: table-cell;
-  vertical-align: middle;
+  &__image, &__body {
+    display: table-cell;
+    vertical-align: middle;
 
-  .flag--top & {
-    vertical-align: top;
+    .flag--top & {
+      vertical-align: top;
+    }
+
+    .flag--bottom & {
+      vertical-align: bottom;
+    }
   }
 
-  .flag--bottom & {
-    vertical-align: bottom;
+  &__image > img {
+    display: block;
   }
-}
 
-.flag__image > img {
-  display: block;
-}
-
-.flag__body {
-  width: 100%;
+  &__body {
+    width: 100%;
+  }
 }

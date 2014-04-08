@@ -1,0 +1,11 @@
+// For grunt-spritesmith
+// Add rules for both @1x and @2x
+
+@mixin sprite-2x($sprite, $sprite_2x) {
+  @include sprite($sprite);
+
+  @include mq('hdpi') {
+    @include spriteImage($sprite_2x);
+    background-size: nth($sprite, 7) nth($sprite, 8);
+  }
+}

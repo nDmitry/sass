@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Sass framework",
+  "main": "main.scss",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "nDmitry/sass",
+  "author": "Dmitry Nikitenko",
+  "license": "MIT"
+}

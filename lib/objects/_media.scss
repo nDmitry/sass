@@ -11,21 +11,18 @@
 
 .media {
   display: block;
-}
 
-.media__img {
-  float: left;
-}
+  &__img {
+    float: left;
+    img {
+      display: block;
+    }
+    &--rev {
+      float: right;
+    }
+  }
 
-.media__img--rev {
-  float: right;
-}
-
-.media__img img,
-.media__img--rev img {
-  display: block;
-}
-
-.media__body {
-  overflow: hidden;
+  &__body {
+    overflow: hidden;
+  }
 }

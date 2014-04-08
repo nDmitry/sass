@@ -1,0 +1,10 @@
+@import "vars";
+@import "lib/functions/headings";
+
+#{headings()} {
+  padding: 0;
+}
+
+#{headings(3, 5)} {
+  padding: 0;
+}

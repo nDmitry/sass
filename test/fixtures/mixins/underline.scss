@@ -1,0 +1,6 @@
+@import "vars";
+@import "lib/mixins/underline";
+
+.test {
+  @include underline;
+}

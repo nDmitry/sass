@@ -1,0 +1,26 @@
+.test {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+}
+.test:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.test {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+}
+.test:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 150%;
+}
+.is-ie7 .test {
+  text-indent: -9999px;
+}

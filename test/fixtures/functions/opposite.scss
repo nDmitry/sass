@@ -1,0 +1,7 @@
+@import "vars";
+@import "lib/functions/opposite";
+
+.test {
+  #{opposite(right)}: 0;
+  text-align: #{opposite(center)};
+}

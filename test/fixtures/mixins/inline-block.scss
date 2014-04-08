@@ -1,0 +1,11 @@
+@import "vars";
+@import "lib/mixins/inline-block";
+
+.test {
+  @include inline-block;
+}
+
+.test {
+  $ie7: true !global;
+  @include inline-block;
+}

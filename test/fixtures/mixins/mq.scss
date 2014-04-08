@@ -1,0 +1,14 @@
+@import "vars";
+@import "lib/mixins/mq";
+
+@include mq('palm') {
+  .test {
+    padding: 0;
+  }
+}
+
+@include mq('(max-width: 960px)') {
+  .test {
+    padding: 0;
+  }
+}

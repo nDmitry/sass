@@ -1,0 +1,6 @@
+@import "vars";
+@import "lib/mixins/clr";
+
+.test {
+  @include clr;
+}

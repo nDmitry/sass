@@ -1,0 +1,4 @@
+@import "vars";
+@import "lib/mixins/font-face";
+
+@include font-face('Custom Font', '/path/to/font');

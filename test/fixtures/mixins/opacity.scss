@@ -1,0 +1,6 @@
+@import "vars";
+@import "lib/mixins/opacity";
+
+.test {
+  @include opacity(.7);
+}

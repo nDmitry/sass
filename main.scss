@@ -1,36 +1,65 @@
-@charset 'UTF-8';
-
-@import "lib/vendor/media-queries";
-
 @import "vars";
 
-@import "lib/functions";
-@import "lib/mixins";
-@import "lib/placeholders";
+@import "lib/functions/em";
+@import "lib/functions/rem";
+@import "lib/functions/headings";
+@import "lib/functions/opposite";
 
+@import "lib/mixins/mq";
+@import "lib/mixins/opacity";
+@import "lib/mixins/inline-block";
+@import "lib/mixins/clr";
+@import "lib/mixins/fallback";
+@import "lib/mixins/font-face";
+@import "lib/mixins/ir";
+@import "lib/mixins/arrow";
+@import "lib/mixins/underline";
 
-// *** Layers *** //
+@import "hooks";
 
-// Base layer
+/* ==========================================================================
+   Layers
+   ========================================================================== */
+
+/*
+   Base layer
+   ========================================================================== */
 @import "lib/base/reset";
-@import "lib/base/normalize";
 @import "partials/base";
 @import "partials/print";
 
-// Layout layer
+/*
+   Layout layer
+   ========================================================================== */
 @import "partials/layout";
 
-// Abstractions
+/*
+   Objects layer
+   ========================================================================== */
+@import "lib/objects/btn";
+@import "lib/objects/icon";
+@import "lib/objects/grid";
+@import "lib/objects/widths";
+@import "lib/objects/form";
+@import "lib/objects/nav";
 @import "lib/objects/media";
 @import "lib/objects/flag";
+@import "lib/objects/badge";
 
-// Module (objects) layer (BEM blocks as modules)
-@import "partials/blocks";
+/*
+   Blocks layer
+   ========================================================================== */
+@import "partials/sprites";
+@import "partials/sprites_2x";
 
-// State layer
+@import "partials/blocks/rename";
+
+/*
+   States layer
+   ========================================================================== */
 @import "partials/state";
 
-
-// *** Miscellaneous *** //
-
+/* ==========================================================================
+   Miscellaneous
+   ========================================================================== */
 @import "partials/shame";

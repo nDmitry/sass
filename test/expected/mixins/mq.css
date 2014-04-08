@@ -1,0 +1,10 @@
+@media only screen and (max-width: 568px) {
+  .test {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .test {
+    padding: 0;
+  }
+}

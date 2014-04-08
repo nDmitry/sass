@@ -1,0 +1,11 @@
+@import "vars";
+@import "lib/mixins/ir";
+
+.test {
+  @include ir;
+}
+
+.test {
+  $ie7: true !global;
+  @include ir;
+}

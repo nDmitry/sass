@@ -1,0 +1,23 @@
+.test {
+  position: relative;
+}
+.test:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  content: '';
+  border: solid transparent;
+  border-bottom-color: white;
+  border-width: 20px;
+  margin-left: -20px;
+}
+.test:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  content: '';
+  border: solid transparent;
+  border-bottom-color: black;
+  border-width: 20px;
+  margin-left: -20px;
+}
