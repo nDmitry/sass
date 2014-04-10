@@ -1,4 +1,4 @@
-SASS = sass --no-cache --scss --style expanded --load-path ./ --update
+SASS = sass --no-cache --scss --style expanded --load-path sass --compass --update
 
 FIXTURES = test/fixtures
 ACTUAL = test/actual

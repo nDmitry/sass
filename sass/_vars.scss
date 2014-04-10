@@ -31,3 +31,7 @@ $breakpoints: ('palm' 'lap' 'portable' 'desk' 'wide');
 
 $grid-gutter-width: 20px;
 $grid-gutter-height: 20px;
+
+// Sprites configuration
+$default-sprite-separator: '--';
+// $sprites: sprite-map('sprites/*.png', $spacing: 5px);
