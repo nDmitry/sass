@@ -2,13 +2,14 @@ $ie7: false !default;
 $ie8: true !default;
 $responsive: true !default;
 
-$font-georgia: Georgia, Cambria, "Times New Roman", Times, serif;
-$font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-$font-verdana: Verdana, Arial, sans-serif;
-$font-arial: Arial, Verdana, sans-serif;
-$font-tahoma: Tahoma, Verdana, Arial, sans-serif;
-$font-monospaced: Consolas, Menlo, "Bitstream Vera Sans Mono", Courier, monospace;
+$font-georgia: Georgia, serif;
+$font-times: "Times New Roman", Times, serif;
+$font-helvetica: "Helvetica Neue", Helvetica, sans-serif;
+$font-lucida: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", sans-serif;
+$font-verdana: Verdana, sans-serif;
+$font-arial: Arial, sans-serif;
+$font-tahoma: Tahoma, "Helvetica Neue", sans-serif;
+$font-monospace: Consolas, Menlo, "Courier New", monospace;
 
 // used only for calculations
 $default-font-size: 16px;
