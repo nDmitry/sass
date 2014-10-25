@@ -6,6 +6,7 @@ ACTUAL = test/actual
 compile:
 	mkdir -p $(ACTUAL)
 	$(SASS) $(FIXTURES):$(ACTUAL)
+	$(SASS) sass/main.scss:$(ACTUAL)/main.css
 
 .PHONY: clean
 clean:

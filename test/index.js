@@ -30,3 +30,12 @@ describe('mixins', function() {
         });
     });
 });
+
+describe('compilation', function() {
+    it('should compile', function() {
+        assert.strictEqual(
+            fs.readFileSync(path.join('test/actual/main.css'), 'utf8'),
+            fs.readFileSync(path.join('test/expected/main.css'), 'utf8')
+        );
+    });
+});

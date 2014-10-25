@@ -1,0 +1,496 @@
+/* ==========================================================================
+   Layers
+   ========================================================================== */
+/*
+   Base layer
+   ========================================================================== */
+/**
+ * Custom reset
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, figure,
+pre, hr,
+ul, ol, dl, dd,
+fieldset,
+table {
+  margin: 0 0 22.4px;
+  padding: 0;
+  border: 0;
+}
+
+body, menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+table {
+  width: 100%;
+}
+
+/** Sensible defaults, mostly based on h5bp */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/**
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+/**
+ * Russian quotes. http://bit.ly/19KbJcK
+ */
+html:lang(ru) q {
+  quotes: "\00AB" "\00BB" "\201E" "\201C";
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.4;
+  color: #222;
+  background-color: #fff;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  background: #ccc;
+}
+
+a {
+  color: blue;
+}
+a:hover {
+  color: #9999ff;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^='javascript:']:after,
+  a[href^='#']:after {
+    content: '';
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*
+   Layout layer
+   ========================================================================== */
+/*
+   Objects layer
+   ========================================================================== */
+/**
+ * Button object
+ *
+ * E.g.:
+ *
+ *    <button class="btn btn--fit">Button</button>
+ *    <input class="btn" type="submit" disabled>
+ */
+.btn {
+  display: inline-block;
+  padding: 0 1em;
+  line-height: 2;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+}
+.btn, .btn:hover {
+  text-decoration: none;
+}
+
+.btn--fit {
+  width: 100%;
+}
+
+.btn--disabled, .btn[disabled] {
+  cursor: not-allowed;
+}
+
+/**
+ * Useful defaults for font and any other icons
+ *
+ * E.g.:
+ *
+ * .icon {
+ *   font-family: 'WebSymbolsLiga';
+ *   font-size: 16px;
+ * }
+ *
+ * .icon--twitter {
+ *   color: #00acee;
+ * }
+ *
+ * <i class="icon icon--twitter">&#229;</i>
+ */
+.icon {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Forms
+ *
+ * Example:
+ *
+ * <form class="form[--vertical|inline]">
+ *   <div class="form__group">
+ *     <label class="form__label" for="email">
+ *       E-mail:
+ *       <small>Additional information</small>
+ *     </label>
+ *     <div class="form__control">
+ *       <input class="text-input" type="email" id="email">
+ *       <small>Some text after the field</small>
+ *     </div>
+ *   </div>
+ *   <div class="form__group">
+ *     <div class="form__label">
+ *       Options:
+ *     </div>
+ *     <div class="form__control">
+ *       <ul class="check-list[--vertical]">
+ *            <li>
+ *              <label>
+ *                <input type="checkbox"> Option
+ *              </label>
+ *            </li>
+ *            <li>
+ *                <label>
+ *                  <input type="checkbox"> Option
+ *                </label>
+ *            </li>
+ *        </ul>
+ *     </div>
+ *   </div>
+ * </form>
+ */
+.form__group {
+  margin-bottom: 20px;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+}
+.form__label, .form__control {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.form__label {
+  padding-right: 20px;
+}
+.form__label small {
+  display: block;
+}
+.form__control {
+  padding-left: 20px;
+}
+.form__control small {
+  display: inline-block;
+}
+.form--vertical .form__label, .form--vertical .form__control {
+  display: block;
+}
+.form--vertical .form__label {
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+.form--vertical .form__control {
+  padding-left: 0;
+}
+.form--inline .form__label, .form--inline .form__control {
+  display: inline;
+}
+.form--inline .form__label small {
+  display: inline-block;
+}
+
+label {
+  cursor: pointer;
+}
+
+.check-list li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.check-list--vertical li {
+  display: block;
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+
+/**
+ * Nav object
+ *
+ * E.g.:
+ *
+ *    <ul class="nav [nav[--[stacked|fit]]">
+ *        <li class="nav__item"><a href=""></a></li>
+ *        <li  class="nav__item"><a href=""></a></li>
+ *    </ul>
+ */
+.nav {
+  margin: 0;
+  white-space: nowrap;
+}
+.nav__item, .nav__item > a {
+  display: inline-block;
+}
+.nav__item--title {
+  font-weight: 700;
+}
+.nav--stacked .nav__item {
+  display: list-item;
+}
+.nav--stacked .nav__item > a {
+  display: block;
+}
+.nav--fit {
+  display: table;
+  width: 100%;
+}
+.nav--fit .nav__item {
+  display: table-cell;
+}
+.nav--fit .nav__item > a {
+  display: block;
+}
+
+/**
+ * Media object | By Nicole Sullivan http://bit.ly/19VNkBF
+ *
+ * E.g.:
+ *
+ *    <div class="media">
+ *        <img src="" alt="" class="media__img">
+ *        <p class="media__body">Lorem ipsum dolor sit amet</p>
+ *    </div>
+ */
+.media {
+  display: block;
+}
+.media__img {
+  float: left;
+}
+.media__img img {
+  display: block;
+}
+.media__img--rev {
+  float: right;
+}
+.media__body {
+  overflow: hidden;
+}
+
+/**
+ * Flag object | By Harry Roberts http://bit.ly/18uCKQM
+ *
+ * E.g.:
+ *
+ *    <div class="flag flag--bottom">
+ *        <img src="" alt="" class="flag__img">
+ *        <p class="flag__body">Lorem ipsum dolor sit amet</p>
+ *    </div>
+ */
+.flag {
+  display: table;
+  width: 100%;
+}
+.flag__image, .flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.flag--top .flag__image, .flag--top .flag__body {
+  vertical-align: top;
+}
+.flag--bottom .flag__image, .flag--bottom .flag__body {
+  vertical-align: bottom;
+}
+.flag__image > img {
+  display: block;
+}
+.flag__body {
+  width: 100%;
+}
+
+/**
+ * Badge object
+ *
+ * E.g.:
+ *
+ *    <span class="badge">2</span>
+ */
+.badge {
+  display: inline-block;
+  padding: .1em .2em;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+}
+.badge, .badge:hover, .badge:focus {
+  text-decoration: none;
+}
+.badge:empty {
+  display: none;
+}
+
+/*
+   Blocks layer
+   ========================================================================== */
+/*
+   States layer
+   ========================================================================== */
+/**
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.is-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 568px) {
+  .is-hidden--palm {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 1023px) {
+  .is-hidden--lap {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .is-hidden--portable {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .is-hidden--desk {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .is-hidden--wide {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+/**
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.is-invisible {
+  visibility: hidden;
+}
+
+/**
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.is-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
