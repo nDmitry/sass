@@ -27,8 +27,18 @@ $mq: (
 
 $breakpoints: ('palm' 'lap' 'portable' 'desk' 'wide');
 
-$grid-gutter-width: 20px;
-$grid-gutter-height: 20px;
+$grid-gutter: 20px;
+
+$susy: (
+  columns: 12,
+  gutters: $grid-gutter,
+  global-box-sizing: border-box,
+  use-custom: (
+    box-sizing: false,
+    clearfix: false,
+    rem: true,
+  )
+);
 
 // Sprites configuration
 $default-sprite-separator: '--';

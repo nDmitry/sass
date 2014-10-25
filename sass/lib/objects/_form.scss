@@ -38,7 +38,7 @@
 
 .form {
   &__group {
-    margin-bottom: $grid-gutter-width;
+    margin-bottom: $grid-gutter;
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
     @if $ie7 {
@@ -57,14 +57,14 @@
   }
 
   &__label {
-    padding-right: $grid-gutter-width / 2;
+    padding-right: $grid-gutter;
     small {
       display: block;
     }
   }
 
   &__control {
-    padding-left: $grid-gutter-width / 2;
+    padding-left: $grid-gutter;
     small {
       @include inline-block;
     }
@@ -76,7 +76,7 @@
     }
     .form__label {
       padding-right: 0;
-      padding-bottom: $grid-gutter-width / 2;
+      padding-bottom: $grid-gutter;
     }
     .form__control {
       padding-left: 0;
@@ -99,21 +99,17 @@ label {
   cursor: pointer;
 }
 
-.text-input, textarea {
-
-}
-
 .check-list {
   li {
     @include inline-block;
-    padding-right: $grid-gutter-width;
+    padding-right: $grid-gutter;
   }
 
   &--vertical {
     li {
       display: block;
       padding-right: 0;
-      padding-bottom: $grid-gutter-width / 2;
+      padding-bottom: $grid-gutter;
     }
   }
 }
