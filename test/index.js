@@ -9,18 +9,20 @@ var actual = {
     mixins: fs.readdirSync('test/actual/mixins/')
 };
 
-describe('lib', function() {
-    it('should compile functions', function() {
-        actual.functions.forEach(function(file) {
+describe('functions', function() {
+    actual.functions.forEach(function(file) {
+        it(path.basename(file, '.css'), function() {
             assert.strictEqual(
                 fs.readFileSync(path.join('test/actual/functions', file), 'utf8'),
                 fs.readFileSync(path.join('test/expected/functions', file), 'utf8')
             );
         });
     });
+});
 
-    it('should compile mixins', function() {
-        actual.mixins.forEach(function(file) {
+describe('mixins', function() {
+    actual.mixins.forEach(function(file) {
+        it(path.basename(file, '.css'), function() {
             assert.strictEqual(
                 fs.readFileSync(path.join('test/actual/mixins', file), 'utf8'),
                 fs.readFileSync(path.join('test/expected/mixins', file), 'utf8')
@@ -28,4 +30,3 @@ describe('lib', function() {
         });
     });
 });
-
