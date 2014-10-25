@@ -11,7 +11,7 @@
     "mocha": "^2.0.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "make all"
   },
   "repository": "nDmitry/sass",
   "author": "Dmitry Nikitenko",
