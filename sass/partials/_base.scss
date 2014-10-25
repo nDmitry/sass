@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: $default-font-size;
+}
+
 /**
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
